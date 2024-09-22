@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+
+    <display-name>aishajavaprojectMVC</display-name>
+    
+    <context-param>
+        <param-name>jdbcUsername</param-name>
+        <param-value>odugbesa</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>jdbcPassword</param-name>
+        <param-value>diStrelg9</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>jdbcUrl</param-name>
+        <param-value>jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/odugbesa</param-value>
+    </context-param>
+
+    <!-- Servlet Definition -->
+    <servlet>
+        <servlet-name>webserverlet</servlet-name>
+        <servlet-class>mvc.net.code.webservelet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>webserverlet</servlet-name>
+        <url-pattern>/films/*</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+    </welcome-file-list>
+
+</web-app>
